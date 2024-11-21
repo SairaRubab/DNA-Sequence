@@ -1,21 +1,12 @@
  # <b>  DNA Sequencing Using Machine Learning Algorithms
   
-###  Investigator: Ehsan Gharib-Nezhad
-
-  <p>
-  <a href="https://www.linkedin.com/in/ehsan-gharib-nezhad/" rel="nofollow noreferrer">
-    <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
-  </a> &nbsp; 
-  <a href="https://github.com/EhsanGharibNezhad/" rel="nofollow noreferrer">
-    <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
-  </a>
-</p>
-
-
 <br></br>
 # <a id = 'ProblemStatement'>Problem Statement</b></a>
-High-throughput Next Generation Sequencing has played a crucial role in broadening our understanding of biology. Understanding the limitation and accuracy of the recorded data, however, is challening step as the interpretation of human genome relies on its accuracy. Traditional Machine learning-based tools as well as the deep learning neural network could provide an important means to rigriously vet the sequencing results and leverage the accuracy of the sequencing genomes and
-transcriptomes. Critically speaking, machine learning provides powerful statistical tools to better understand the accuracy of the DNA sequencing. In this project, 4380 human DNA sequences and 7 family genes were employed to train and test a set of models using multiclass classification technique with traditional machien learning algorithiums including KNN, Randon Forest, SVM. Then, deep neural networks were generated with opimized architacture in order to boost the classification accuracy. The main objective of this project is to accuratly classify the human family genes given a set of DNA sequences.
+High-throughput Next-Generation Sequencing (NGS) has significantly advanced our understanding of biology. However, ensuring the accuracy of recorded data remains a challenging yet essential step, as the interpretation of the human genome heavily depends on the precision of sequencing results. Leveraging traditional machine learning techniques alongside deep learning neural networks offers a robust approach to rigorously evaluate sequencing outcomes and enhance the accuracy of genomic and transcriptomic data.
+
+This project uses machine learning to improve the classification of human family genes based on DNA sequences. A dataset comprising 4,380 human DNA sequences and 7 family genes was utilized to train and evaluate various models using multiclass classification techniques. Traditional machine learning algorithms, including K-Nearest Neighbors (KNN), Random Forest, and Support Vector Machines (SVM), were employed to establish baseline accuracy. Subsequently, deep neural networks with optimized architectures were developed to enhance classification performance further.
+
+The primary objective of this project is to accurately classify human family genes based on a given set of DNA sequences, showcasing the potential of combining traditional and deep learning approaches in analyzing and interpreting genomic data.
 
 ---
 <br></br>
@@ -131,21 +122,7 @@ In the entire project, all posts are split into train and testing sets with the 
 <br></br>
 
      
-<!-- # <a id = 'Conclusion'>Conclusion</b>
 
-Random Forest is found to be the best statistical algorithm for classification because of the following reasons:
-- Provides the highest accuracy scores, ~99% and ~96% for training and testing datasets 
-- Works great with ultra-imbalanced samples (~93% vs. ~7%)
-- High rates for true positive (91.06% out of 93%) and true negative (5.5% out of 7%)
-- Low scores for false positive (1.57%) and false-negative (1.87%)
-- High scores for precision and recall (~98%) 
-
-In addition, this model is…..
-- Interpretable 
-- Optimizable coefficients to reduce variance and bias
-- Capable to use different generalization methods i.e., Lasso, Ridge, ElasticNet
-- Tunable parameters, solvers, and penalty functions for multiple cases 
-- Works best with both large and small datasets -->
 
 
 
