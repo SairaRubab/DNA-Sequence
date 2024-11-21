@@ -33,7 +33,7 @@ The primary objective of this project is to accurately classify human family gen
 ## notebooks/ <br />
 
 *Setp 1: Exploratory Data Analysis:*\
-&nbsp; &nbsp; &nbsp; __ [Exploratory Data_Analysis_EDA.ipynb](notebooks/1ExploratoryDataAnalysisEDA.ipynb)<br />
+&nbsp; &nbsp; &nbsp; __ [Exploratory Data Analysis EDA.ipynb](notebooks/1ExploratoryDataAnalysisEDA.ipynb)<br />
 
 *Setp 2: DNA Sequence Dataset Processing:*\
 &nbsp; &nbsp; &nbsp; __ [Generate kmer dataset.ipynb](notebooks/2GeneratekmerDataset.ipynb)<br />
