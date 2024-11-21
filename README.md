@@ -33,18 +33,18 @@ The primary objective of this project is to accurately classify human family gen
 ## notebooks/ <br />
 
 *Setp 1: Exploratory Data Analysis:*\
-&nbsp; &nbsp; &nbsp; __ [1__Exploratory_Data_Analysis_EDA.ipynb](notebooks/1__Exploratory_Data_Analysis_EDA.ipynb)<br />
+&nbsp; &nbsp; &nbsp; __ [Exploratory Data_Analysis_EDA.ipynb](notebooks/1ExploratoryDataAnalysisEDA.ipynb)<br />
 
 *Setp 2: DNA Sequence Dataset Processing:*\
-&nbsp; &nbsp; &nbsp; __ [2__Generate_kmer_dataset.ipynb](notebooks/2__Generate_kmer_dataset.ipynb)<br />
+&nbsp; &nbsp; &nbsp; __ [Generate kmer dataset.ipynb](notebooks/2GeneratekmerDataset.ipynb)<br />
 
 *Setp 3: Traditional Machine Learning Models: Classifiers*\
-&nbsp; &nbsp; &nbsp; __ [3__KNeighborsClassifier.ipynb](notebooks/3__KNeighborsClassifier.ipynb)<br />
-&nbsp; &nbsp; &nbsp; __ [4__RandomForest.ipynb](notebooks/4__RandomForest.ipynb)<br />
+&nbsp; &nbsp; &nbsp; __ [KNeighborsClassifier.ipynb](notebooks/3KNeighborsClassifier.ipynb)<br />
+&nbsp; &nbsp; &nbsp; __ [RandomForest.ipynb](notebooks/4RandomForest.ipynb)<br />
 
 
 *Setp 4: Feed-Forward Neural Networks: Classifiers*\
-&nbsp; &nbsp; &nbsp; __ [5__FeedForward_Neural_Networks.ipynb](notebooks/5__FeedForward_Neural_Networks.ipynb)<br />
+&nbsp; &nbsp; &nbsp; __ [FeedForward Neural Networks.ipynb](notebooks/5FeedForwardNeuralNetworks.ipynb)<br />
 />
 
 
@@ -74,12 +74,7 @@ The primary objective of this project is to accurately classify human family gen
 ---
 # <a id = 'Background'>Background</a> 
 ## 1. <a id = 'api'> DNA sequencing </a> 
-DNA (Deoxyribonucleic acid) sequencing is the process of determining the nucleic acid sequence or the order of nucleotides in DNA molecule. In fact, it includes experimental techniques to determine the order of the four bases: Adenine (A), guanine (G), cytosine (C), and thymine (T). DNA sequencing is a crucial technique in biology because it is fundamental step in better understading the root of many genetic deseaise. The following figure illustrate the main concept of DNA sequecing as well as some of its importnat applications [[ref]](https://www.nist.gov/patents/nucleic-acid-sequencer-electrically-determining-sequence-nitrogenous-bases-single-stranded). 
-
-
-<br></br>
-<img src="./plots/DNA_Sequencing_Concept.png" alt="drawing" width="800"/>
-<br></br>
+DNA (Deoxyribonucleic Acid) sequencing is identifying the precise order of nucleotides within a DNA molecule. This involves determining the sequence of the four bases: Adenine (A), Guanine (G), Cytosine (C), and Thymine (T). DNA sequencing is a vital technique in biology, serving as a fundamental step in understanding the genetic basis of various diseases. The figure below highlights the core concept of DNA sequencing along with its key applications. [[ref]](https://www.nist.gov/patents/nucleic-acid-sequencer-electrically-determining-sequence-nitrogenous-bases-single-stranded). 
 
 
 ---
@@ -87,39 +82,32 @@ DNA (Deoxyribonucleic acid) sequencing is the process of determining the nucleic
 
 
 ## <a id = 'RandomForest'>1. Random Forest</b></a>
-A random forest is a supervised machine learning algorithm and is a part of ensemble methods. It is known for having lower overfitting issues than common decision trees because it creates a large ensemble of bootstrap trees and aggregates them. In this blog, I will discuss the fundamental backgrounds to better understand both Random Forest Classifiers and regressors.
+Random Forest is a supervised machine learning algorithm and a key ensemble method. It addresses overfitting issues commonly seen in decision trees by building a large ensemble of bootstrap trees and combining their results. This blog delves into the foundational concepts behind both Random Forest Classifiers and Regressors.
 
-In the bagging technique, all features get selected but the number of observations (or rows in the dataset) is different. Therefore, there is still some correlation between the bootstrap trees which results in high variance. Random Forest breaks this correlation by randomly selecting the features and not having all of them in all decision trees. Hence, Random Forest can be represented as a supervised machine learning algorithm that uses an enhanced version of the Bagging technique to create an ensemble of decision trees with low correlation.
+In the bagging technique, all features are used, but the dataset's observations (rows) vary, leading to some correlation among the bootstrap trees and resulting in high variance. Random Forest reduces this correlation by randomly selecting subsets of features, ensuring not all features are included in every decision tree. As a result, Random Forest enhances the Bagging technique, creating a low-correlation ensemble of decision trees for more reliable predictions.
 
 `from sklearn.ensemble import RandomForestClassifier`
 
 
-![image](/plots/RandomForest_concept.png)
 
 
 ## <a id = 'NeuralNetworks'>2. Neural Networks</b></a>
 
-Dendrites, axons, cell body might not be that familiar terms for everyone; however, the complexity of the neural networks in the brain could be a reasonable naive start to understanding the complexity of teaching a computer to solve problems. Here in this figure 4, the analogy between the signal transferring process and the deep neural network is depicted. 
+Dendrites, axons, and cell bodies may not be familiar terms to everyone, but understanding the complexity of neural networks in the brain provides a helpful analogy for grasping how computers are trained to solve problems. This comparison offers an intuitive starting point for exploring deep neural networks.
 
-*"The idea is that the synaptic strengths (the weights w) are learnable and control the strength of influence ... dendrites carry the signal to the cell body where they all get summed. If the final sum is above a certain threshold, the neuron can fire, sending a spike along its axon. In the computational model, we assume that the precise timings of the spikes do not matter and that only the frequency of the firing communicates information. Based on this rate code interpretation, we model the firing rate of the neuron with an activation function f."* - CS231-Stanford
+The process can be explained as follows: synaptic strengths, represented by weights (w), are adjustable and determine the influence of incoming signals. Dendrites carry these signals to the cell body, where they are summed. If the total exceeds a certain threshold, the neuron "fires," sending a signal through its axon. In computational models, the exact timing of these signals is not considered critical; instead, the firing frequency conveys information. Using this "rate code" approach, the firing rate is modeled with an activation function (f), allowing the network to process and transmit information effectively.
 
-![image](/plots/fnn_concept.png)
+Inspired by biological neural networks, this analogy serves as a foundational concept for understanding deep learning.
+
 
 
 
 
 # <a id = 'Results'>Results</b>
 
-In the entire project, all posts are split into train and testing sets with the proportion of 75% and 25%, respectively. For each dataset, accuracy, precision, recall, F1 score as well as their false positive, false negative, and true positive and negative values are reported. The following equations are showing their definitions [[ref](https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall)]:
-
-<br></br>
-<img src="/plots/compare_knn_RandomForest_results.png" alt="drawing" width="800"/>
-<br></br>
+In this project, all posts are divided into training and testing sets with a 75% to 25% split, respectively. For each dataset, performance metrics such as accuracy, precision, recall, and F1 score are calculated. Additionally, the values for false positives, false negatives, true positives, and true negatives are reported. Their definitions are provided in the following equations. [[ref](https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall)]:
 
 
-<br></br>
-<img src="/plots/FNNs_results.png" alt="drawing" width="800"/>
-<br></br>
 
      
 
